@@ -1,0 +1,38 @@
+# vim: set filetype=sh:
+
+#
+# General
+#
+export DOTFILES="$HOME/.dotfiles"
+export EDITOR=vim
+
+export NAME='Nick Charlton'
+export EMAIL='nick@nickcharlton.net'
+export TZ='Europe/London'
+
+#
+# System
+#
+export PLATFORM='unknown'
+uname_str=$(uname)
+if [[ "$uname_str" == 'Darwin' ]]; then
+    export PLATFORM='osx'
+elif [[ "$uname_str" == 'Linux' ]]; then
+    export PLATFORM='linux'
+elif [[ "$uname_str" == 'FreeBSD' ]]; then
+    export PLATFORM='freebsd'
+fi
+
+#
+# Path
+#
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+# dotfiles bin
+export PATH="$DOTFILES/bin:$PATH"
+
+if [[ "$PLATFORM" == "osx" ]]; then
+    # xcode and xcode tools
+    export XCODE="`xcode-select --print-path`"
+    export PATH="$XCODE/Tools:$PATH"
+fi
