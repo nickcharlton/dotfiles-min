@@ -24,3 +24,6 @@ mkdir -p $HOME/.vimundo # the directory for undo files.
 
 # tmux
 ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
+
+# ruby
+ln -sf $DOTFILES/gemrc $HOME/.gemrc
