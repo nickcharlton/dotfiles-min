@@ -27,3 +27,7 @@ ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
 
 # ruby
 ln -sf $DOTFILES/gemrc $HOME/.gemrc
+
+# git
+ln -sf $DOTFILES/gitconfig $HOME/.gitconfig
+ln -sf $DOTFILES/gitignore $HOME/.gitignore
