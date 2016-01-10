@@ -1,0 +1,9 @@
+if &compatible
+  set nocompatible
+end
+
+call plug#begin('~/.vim/bundle')
+
+Plug 'bling/vim-airline'
+
+call plug#end()
