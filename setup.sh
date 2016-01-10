@@ -21,3 +21,6 @@ ln -sf $DOTFILES/vimrc $HOME/.vimrc
 ln -sf $DOTFILES/vimrc.bundles $HOME/.vimrc.bundles
 ln -sf $DOTFILES/vim/ $HOME/.vim
 mkdir -p $HOME/.vimundo # the directory for undo files.
+
+# tmux
+ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
