@@ -5,7 +5,7 @@ A minimal version of my primary [dotfiles][].
 ## Usage
 
 ```sh
-git clone https://github.com/nickcharlton/dotfiles.git ~/.dotfiles
+git clone --recursive https://github.com/nickcharlton/dotfiles-min.git ~/.dotfiles
 cd ~/.dotfiles
 ./setup.sh
 ```
